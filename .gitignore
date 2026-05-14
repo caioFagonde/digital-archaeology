@@ -1,0 +1,43 @@
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------------------------
+# Rust / Cargo / Maturin
+# -----------------------------------------------------------------------------
+backend/target/
+# Cargo.lock is typically committed for binaries, but ignored for libraries. 
+# Since this is compiled via Maturin in Docker, we can safely ignore it locally.
+Cargo.lock
+
+# -----------------------------------------------------------------------------
+# OS / Environment
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# -----------------------------------------------------------------------------
+# Project Specific Data
+# -----------------------------------------------------------------------------
+# Ignore all binary files, dumps, and disk images in the data directory
+data/*.bin
+data/*.img
+data/*.iso
+data/*.raw
+data/*.dd
+data/*.dump
+
+# Do not ignore the directory placeholder itself
+!data/.gitkeep
