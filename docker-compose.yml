@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: digital-archaeology:latest
+    stdin_open: true # Equivalent to -i
+    tty: true        # Equivalent to -t
+    volumes:
+      - ./data:/app/data
+      - ./rules:/app/rules
+    # We do not define a command here because run.sh will invoke it interactively

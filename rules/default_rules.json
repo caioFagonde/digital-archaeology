@@ -1,0 +1,10 @@
+[
+    {
+        "name": "ZIP Archive (PKZIP)",
+        "hex": "50 4B 03 04"
+    },
+    {
+        "name": "PDF Document",
+        "hex": "25 50 44 46 2D"
+    }
+]
